@@ -9,4 +9,9 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadSceneAsync("In-to-Game");
     }
+
+    public void QuitGame()  
+    {
+        Application.Quit();
+    }
 }
