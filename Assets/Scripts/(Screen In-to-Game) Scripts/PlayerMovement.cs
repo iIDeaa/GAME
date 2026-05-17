@@ -28,12 +28,12 @@ public class PlayerMovement : MonoBehaviour
         if (context.canceled)
         {
             animator.SetBool("IsWalking", false);
-            animator.SetFloat("LastX", moveInput.x);
-            animator.SetFloat("LastY", moveInput.y);
+            animator.SetFloat("LastInputX", moveInput.x);
+            animator.SetFloat("LastInputY", moveInput.y);
         }
         
         moveInput = context.ReadValue<Vector2>();
-        animator.SetFloat("InX", moveInput.x);
-        animator.SetFloat("InY", moveInput.y);
+        animator.SetFloat("InputX", moveInput.x);
+        animator.SetFloat("InputY", moveInput.y);
     }
 }
